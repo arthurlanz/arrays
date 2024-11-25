@@ -1,0 +1,23 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: PROCURAR LETRA
+    Peça para o usuário digitar UMA palavra.
+    Peça para o usuário digitar a letra que deseja encontrar na palavra que acabou de digitar.
+
+    Apresente para o usuário se a LETRA que ele quer procurar existe ou não na palavra digitada e qual a primeira posição da LETRA na PALAVRA.
+    */
+
+    //ENTRADA
+    const word = prompt(`Informe UMA palavra.`);
+    const letter = prompt(`Informe a letra que deseja encontrar.`);
+
+    //PROCESSAMENTO
+    let message;
+    let position = word.search(letter);
+    (position >= 0) ? message = `A letra que você deseja procurar existe nessa palavra e está na posição ${position + 1}` : message = `A letra na palavra digitada não existe.`;
+
+    //SAÍDA
+    document.write(message);
+
+</script>

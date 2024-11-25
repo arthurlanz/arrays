@@ -1,0 +1,61 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: LOJA DE VEÍCULOS
+    Crie os seguintes arrays:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    
+    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    Apresente a lista final de cada tipo de veículo.
+    */
+
+    //ENTRADA
+    const categoria = prompt(`Informe a categoria de veículo que deseja inserir: 1 - SUV, 2 - Sedan ou 3 - Hatch`);
+    const categoria2 = prompt(`Informe mais uma categoria de veículo que deseja inserir: 1 - SUV, 2 - Sedan ou 3 - Hatch`);
+    const categoria3 = prompt(`Informe a categoria de veículo que deseja inserir: 1 - SUV, 2 - Sedan ou 3 - Hatch`);
+    const veiculo1 = prompt(`Informe o primeiro veículo para inserir na lista`);
+    const veiculo2 = prompt(`Informe o segundo veículo para ser inserido na lista`);
+    const veiculo3 = prompt(`Informe o terceiro para ser inserido na lista`);
+
+    //PROCESSAMENTO
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    if (categoria == 1) {
+        carrosSUV.push(veiculo1);
+    } else if (categoria == 2) {
+        carrosSedan.push(veiculo1);
+    } else if (categoria == 3) {
+        carrosHatch.push(veiculo1);
+    } else {
+        document.write(`Categoria de carro não identificada.<br>`);
+    }
+    if (categoria2 == 1) {
+        carrosSUV.push(veiculo2);
+    } else if (categoria2 == 2) {
+        carrosSedan.push(veiculo2);
+    } else if (categoria2 == 3) {
+        carrosHatch.push(veiculo2);
+    } else {
+        document.write(`Categoria de carro não identificada.<br>`);
+    }
+    if (categoria3 == 1) {
+        carrosSUV.push(veiculo3);
+    } else if (categoria3 == 2) {
+        carrosSedan.push(veiculo3);
+    } else if (categoria3 == 3) {
+        carrosHatch.push(veiculo3);
+    } else {
+        document.write(`Categoria de carro não identificada.<br>`);
+    }
+
+
+
+    //SAÍDA
+    document.write(`Lista final de cada veículo: <br> Carros SUV: , ${carrosSUV.join(" , ")}, <br> Carros Sedan: , ${carrosSedan.join(" , ")}, <br> Carros Hatch: , ${carrosHatch.join(" , ")}`);
+
+    // ok.
+</script>
